@@ -11,16 +11,19 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginRight="5dp"
-        app:srcCompat="@android:color/black" />
+        app:srcCompat="@android:color/black"
+        android:layout_alignParentLeft="true" />
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="294dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:textColor="#ffffff"
         android:layout_toEndOf="@+id/ivPosterImage"
         android:text="Movie Title"
-        android:textAppearance="@android:style/TextAppearance.Large" />
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_toRightOf="@+id/ivPosterImage" />
 
     <TextView
         android:id="@+id/tvOverview"
@@ -28,5 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
         android:layout_toEndOf="@+id/ivPosterImage"
-        android:text="Movie overview and synopsis" />
+        android:textColor="#ffffff"
+        android:text="Movie overview and synopsis"
+        android:layout_toRightOf="@+id/ivPosterImage" />
 </RelativeLayout>
